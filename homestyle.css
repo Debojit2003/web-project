@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    right: 0;
+    left: 0;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    height : 100px;
+    width : 1420px;
+}
+
+section nav .logo img{
+    width: 160px;
+    cursor: pointer;
+    margin: 10px 0;
+    margin-right : 300px; 
+    height : 100px;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: azure;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #fac031;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color: #fac031;
+}
+
+section nav .icon i{
+    font-size: 18px;
+    color: azure;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover{
+    color: #fac031;
+}
+
+section .main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 130px;
+    width : 100%;
+}
+
+section .main .men_text h1{
+    font-size: 40px;
+    position: relative;
+    top: -200px;
+    left: 80px;
+}
+
+section .main .men_text h1 span{
+    margin-left: 15px;
+    color: #8085d0;
+    font-family: mv boli;
+    line-height: 22px;
+    font-size: 70px;
+}
+
+section .main .main_image img{
+    width: 700px;
+    position: relative;
+    left: 80px;
+    bottom: 80px;
+}
+
+section p{
+    width: 575px;
+    text-align: justify;
+    position: relative;
+    left: 123px;
+    bottom: 250px;
+    line-height: 1.7rem;
+    font-size: 22px;
+}
+
+section .main_btn{
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    position: relative;
+    left: 123px;
+    bottom: 170px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 17px;
+    margin-bottom: 20px;
+}
+
+section .main_btn a{
+    color: azure;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+section .main_btn i{
+    color: azure;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i{
+    transform: translateX(7px);
+}
+
+
+
+/*About*/
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.about .about_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.about .about_main .image img{
+    width: 700px;
+    position: relative;
+    top: 30px;
+}
+
+.about .about_main .about_text h1 span{
+    color: #8085d0;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.about .about_main .about_text h1{
+    font-size: 55px;
+    position: relative;
+    bottom: 30px;
+}
+
+.about .about_main .about_text p{
+    width: 550px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 1.7rem;
+    font-size: 22px;
+}
+
+
+/*Gallery*/
+
+.gallery{
+    width: 100%;
+    padding: 70px 0;
+}
+
+.gallery h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h1 span{
+    margin-left: 15px;
+    color: #8085d0;
+    font-family: mv boli;
+}
+
+.gallery h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #8085d0;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallery .gallery_image_box{
+    width: 95%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.gallery .gallery_image_box .gallery_image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.gallery .gallery_image_box .gallery_image img{
+    width: 100%;
+    height : 450px;
+    transition: .3s;
+}
+
+.gallery .gallery_image_box .gallery_image:hover img{
+    opacity: 0.3;
+}
+
+.gallery .gallery_image_box .gallery_image h3{
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: #fcf807;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallery .gallery_image_box .gallery_image:hover h3{
+    opacity: 1;
+}
+
+.gallery .gallery_image_box .gallery_image p{
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallery .gallery_image_box .gallery_image:hover p{
+    opacity: 1;
+}
+
+.gallery .gallery_image_box .gal_btn{
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+    position: relative;
+    left: 570px;
+    bottom: 30px;
+    width: 150px;
+    cursor: pointer;
+    padding: 12px 17px;
+    margin-bottom: 20px;
+    margin-top: 70px;
+}
+
+.gallery .gallery_image_box .gal_btn a{
+    color: azure;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+.gallery .gallery_image_box .gal_btn i{
+    color: azure;
+    transition: 0.3s;
+}
+
+.gallery .gallery_image_box .gal_btn:hover i{
+    transform: translateX(7px);
+}
+
+
+/*Footer*/
+
+footer{
+    width: 1420px;
+    padding: 30px 0 0 20px;
+    background-image: linear-gradient(160deg, #000000 0%, #8085d0 100%);
+}
+
+footer .footer_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag{
+    text-align: center;
+    margin-left: 150px;
+}
+
+footer .footer_main .footer_tag h2{
+    color: azure;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+footer .footer_main .footer_tag a{
+    margin: 10px 0;
+    color: azure;
+}
+
+footer .footer_main .footer_tag p{
+    margin: 10px 0;
+    color: azure;
+}
+
+footer .footer_main .footer_tag i{
+    margin: 0 5px;
+    cursor: pointer;
+    color: azure;
+}
+
+footer .footer_main .footer_tag i:hover{
+    color: #fac031;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: azure;
+    font-size: 1.5rem;
+}
+
+footer .end span{
+    color: #fac031;
+    margin-left: 10px;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background : #8085d0;
+    border-radius: 15px;
+}
