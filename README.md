@@ -1,5 +1,5 @@
 # web-project
-Website for food recipe
+Food blogging website
 Firstly download the files in disk E
 The open login.html
 Then give the username=username.
